@@ -1,0 +1,5 @@
+name: Config reference formatters
+type: module
+description: Provides formatters for config reference fields.
+package: plugin
+core: 8.x

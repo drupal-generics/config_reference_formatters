@@ -1,0 +1,11 @@
+services:
+
+  config_reference_formatters.plugin.manager.entity_reference_formatter_sort:
+    class: Drupal\config_reference_formatters\Plugin\EntityReferenceFormatterSortPluginManager
+    parent: default_plugin_manager
+
+  config_reference_formatters.repository.vote_result:
+    class: Drupal\config_reference_formatters\Repository\VoteResultRepository
+    arguments:
+      - '@database'
+      - '@entity_type.manager'
